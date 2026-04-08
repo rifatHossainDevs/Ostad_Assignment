@@ -217,11 +217,13 @@ class Home extends StatelessWidget {
               ///Interest Card
               Padding(
                 padding: const EdgeInsets.only(left: 12, right: 12),
-                child: Row(
-                  children: [
-                    InterestCard(image: 'assets/images/travel.png', title: 'Travel', desc: 'Exploring new places around the world',),
-                    InterestCard(image: 'assets/images/photography.png', title: 'Photography', desc: 'Capturing moments through the lens',),
-                  ],
+                child: SingleChildScrollView(
+                  child: Row(
+                    children: [
+                      InterestCard(image: 'assets/images/travel.png', title: 'Travel', desc: 'Exploring new places around the world',),
+                      InterestCard(image: 'assets/images/photography.png', title: 'Photography', desc: 'Capturing moments through the lens',),
+                    ],
+                  ),
                 ),
               ),
             ],
